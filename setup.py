@@ -1,0 +1,12 @@
+from setuptools import setup, find_packages
+
+with open("requirements.txt") as f:
+    requirements = f.read().splitlines()
+
+    setup(
+        name="multi_ai_agent",
+        version="0.1",
+        author="SHEES KHAN",
+        packages=find_packages(),
+        install_requires=requirements
+    )
